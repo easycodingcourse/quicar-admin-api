@@ -12,15 +12,15 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       
-      ride_list.belongsTo(models.users)
-      ride_list.belongsTo(models.city,{foreignKey:'starting_city',as:'startingCity'})
-      ride_list.belongsTo(models.city,{foreignKey:'destination_city',as:'destinationCity'})
-      ride_list.belongsTo(models.district,{foreignKey:'starting_district',as:'startingDistrict'})
-      ride_list.belongsTo(models.district,{foreignKey:'destination_district',as:'destinationDistrict'})
-      ride_list.belongsTo(models.car_types,{foreignKey:'car_type',as:'carType'})
-      ride_list.belongsTo(models.users,{foreignKey:'user_id',as:'userInfo'})
+    //   ride_list.belongsTo(models.users)
+    //   ride_list.belongsTo(models.city,{foreignKey:'starting_city',as:'startingCity'})
+    //   ride_list.belongsTo(models.city,{foreignKey:'destination_city',as:'destinationCity'})
+    //   ride_list.belongsTo(models.district,{foreignKey:'starting_district',as:'startingDistrict'})
+    //   ride_list.belongsTo(models.district,{foreignKey:'destination_district',as:'destinationDistrict'})
+    //   ride_list.belongsTo(models.car_types,{foreignKey:'car_type',as:'carType'})
+    //   ride_list.belongsTo(models.users,{foreignKey:'user_id',as:'userInfo'})
 
-      ride_list.hasMany(models.ride_biting,{foreignKey: 'ride_id',as:'ride_biding_list'})
+    //   ride_list.hasMany(models.ride_biting,{foreignKey: 'ride_id',as:'ride_biding_list'})
 
     }
   };

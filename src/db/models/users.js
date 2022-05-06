@@ -1,5 +1,5 @@
 'use strict';
-const commonOptionSequelize = require('../utils/commonSequelizeOption')
+const commonOptionSequelize = require('../../../utils/commonSequelizeOption')
 const {
   Model
 } = require('sequelize');
